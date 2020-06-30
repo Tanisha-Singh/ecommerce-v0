@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+
+<div class='container'>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of cartProduct">
+     <div class="card" style="width:300px;">
+       <img class="card-img-top"
+        src={{item.image}}>
+       <div class="card-body">
+         <h5 class="card-title">{{item.name}}</h5>
+       </div>
+     </div>
+    </div>
+   </div>
+   <button class="btn btn-primary" routerLink="/productlist">Continue Shopping</button>
+</div>
+
